@@ -247,6 +247,10 @@ input:checked + .slider-transparent:before {
   color: #555 !important;
 }
 
+.chat-odd:hover {
+  color: #000 !important;
+}
+
 .chat-even {
   background-color: #4080FF;
 }
