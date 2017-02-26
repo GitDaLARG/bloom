@@ -81,6 +81,58 @@ button[class="colored"]:active {
   background-color: #3498ff;
 }
 
+
+/* ---------------------------- */
+/* FUNCTIONAL STUFF             */
+/* ---------------------------- */
+
+/* Modal */
+
+@keyframes bloom-fade-black {
+    from {background-color: rgba(10, 10, 10, 0);}
+    to {background-color: rgba(10, 10, 10, 0.7);}
+}
+
+@keyframes bloom-modal-display {
+    from {opacity: 0; top: 0px;}
+    to {opacity: 1; top: 20%;}
+}
+
+.bloom-black-frame {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(10, 10, 10, 0.7);
+  animation-name: bloom-fade-black;
+  animation-duration: 0.65s;
+}
+
+.bloom-modal-frame {
+  position: relative;
+  float: none;
+  width: 60%;
+  top: 20%;
+  min-height: 50%;
+  max-height: 70%;
+  margin: auto;
+  padding: 5px;
+  overflow: auto;
+  border: 4px solid #CCC;
+  border-radius: 5px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 0 5px 5px
+rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+  animation-name: bloom-modal-display;
+  animation-iteration-count: 1;
+  animation-duration: 0.6s;
+}
+
+/* Dock */
+
 .bsnack-bar {
   position: fixed;
   border-radius: 3px;
@@ -365,7 +417,7 @@ input:checked + .slider-transparent:before {
   position: relative;
   
   min-width: 160px;
-  max-width: 50%;
+  max-width: 60%;
   width: auto;
   height: auto;
   padding: 15px;
@@ -374,10 +426,12 @@ input:checked + .slider-transparent:before {
   margin-bottom: 0px;
   
   font-size: 14px;
+  cursor: default;
   color: white;
 }
 
 .chat-odd {
+  float: left;
   background-color: #ddd;
   color: #555 !important;
   transition: all 0.2s linear;
@@ -388,6 +442,7 @@ input:checked + .slider-transparent:before {
 }
 
 .chat-even {
+  float: right !important;
   background-color: #4080FF;
 }
 
@@ -405,7 +460,7 @@ input:checked + .slider-transparent:before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   
-  display: none;
+  display: block;
 }
 
 .bubble-up {
@@ -422,7 +477,7 @@ input:checked + .slider-transparent:before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   
-  display: none;
+  display: block;
 }
 
 .bubble-left {
@@ -439,7 +494,7 @@ input:checked + .slider-transparent:before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   
-  display: none;
+  display: block;
 }
 
 .bubble-right {
@@ -455,6 +510,8 @@ input:checked + .slider-transparent:before {
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+
+  display: block;
 }
 
 .bubble-round {
