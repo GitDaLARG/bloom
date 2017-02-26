@@ -13,23 +13,6 @@ p, div, a, textarea, input, button {
   font-family: 'Amiko', 'Montserrat', sans-serif;
 }
 
-/* BACKGROUND FLAT COLORS */
-
-.bg-alizarin {
-    background-color: #e74c3c;
-}
-
-.bg-pomegranate {
-    background-color: #c0392b;
-}
-
-.bg-peterriver {
-    background-color: #3498db;
-}
-
-.bg-belizehole {
-    background-color: #2980b9;
-}
 
 /* ---------------------------- */
 /* INPUTS                       */
