@@ -316,6 +316,63 @@ input:checked + .slider-transparent:before {
 
 
 /* ---------------------------- */
+/* INTERACTION ELEMENTS         */
+/* ---------------------------- */
+
+.bloom-contact-card {
+  clear: both;
+  margin-bottom: 8px;
+  width: 220px;
+  height: 70px;
+  background-color: #FFF;
+  border-radius: 5px;
+  border: 3px solid #CCC;
+  padding: 5px;
+}
+
+.bloom-call-to {
+  float: left;
+  clear: none;
+  width: 70px;
+  height: 100%;
+  background-color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3498db;
+
+  border: 3px solid #FFF;
+  border-radius: 4px;
+  
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.bloom-call-to:hover {
+  color: #AAA;
+  border-color: #FFF;
+}
+
+.bloom-call-to:focus {
+  color: #FFF;
+  border-color: #3498db;
+  background-color: #3498db;
+}
+
+.bloom-call-number {
+  float: right;
+  margin-top: 26px;
+  margin-right: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #777;
+}
+
+/* ---------------------------- */
 /* ELEMENTS FOR WEB MESSENGERS  */
 /* ---------------------------- */
 
