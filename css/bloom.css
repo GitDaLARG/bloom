@@ -1,4 +1,17 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Amiko|Merriweather|Montserrat');
+
+/* ---------------------------- */
+/* BASIC STYLES                 */
+/* ---------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+p, div, a, textarea, input, button {
+  font-family: 'Amiko', 'Montserrat', sans-serif;
+}
 
 /* BACKGROUND FLAT COLORS */
 
@@ -22,7 +35,7 @@
 /* INPUTS                       */
 /* ---------------------------- */
 
-.bloom-input {
+input[type="text"], textarea {
   width: 200px;
   height: 20px;
   padding: 10px;
@@ -30,11 +43,93 @@
   border-radius: 5px;
   outline: none;
   font-size: 14px;
-  transition: all 0.3s ease-in-out;
 }
 
-.bloom-input:focus {
+input[type="text"]:hover, textarea:hover {
+  border: 3px solid #aaa;
+}
+
+input[type="text"]:focus, textarea:focus {
   border: 3px solid #3498db;
+}
+
+input[type="text"]:out-of-range, textarea:out-of-range {
+  border: 3px solid #e74c3c;
+}
+
+textarea {
+  transition: none;
+}
+
+button {
+  border: 3px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: #fff;
+  font-weight: 600;
+  color: #ccc;
+  outline: none;
+  transition: all .15s linear;
+}
+
+button:hover {
+  border: 3px solid #aaa;
+  color: #999;
+}
+
+button:focus {
+  border: 3px solid #3498ff;
+  color: #3498ff;
+}
+
+button[class="colored"] {
+  border: 3px solid #1672af;
+  background-color: #3498ff;
+  color: #FFF;
+}
+
+button[class="colored"]:hover {
+  border: 3px solid #1672af;
+  background-color: #1672af;
+}
+
+button[class="colored"]:active {
+  border: 3px solid #3498ff;
+  background-color: #3498ff;
+}
+
+.bsnack-bar {
+  position: fixed;
+  border-radius: 3px;
+  border: 3px solid #333;
+  left: 15%;
+  bottom: -4px;
+  width: 70%;
+  height: 50px;
+  background-color: #111;
+}
+
+.bsnack-bar button[class="snack"] {
+  border: 3px solid #333;
+  background-color: inherit;
+  color: #FFF;
+}
+
+.bsnack-bar button[class="snack"]:hover {
+  border: 3px solid #333;
+  background-color: #333;
+}
+
+.bsnack-bar button[class="snack"]:active {
+  border: 3px solid #3498ff;
+  background-color: #3498ff;
+}
+
+.bsnack-bar p {
+  display: inline-block;
+  margin: 15px;
+  font-size: 14px;
+  color: #FFF;
 }
 
 /* ---------------- */
@@ -225,6 +320,7 @@ input:checked + .slider-transparent:before {
 /* ---------------------------- */
 
 #chat-bubble {
+  display: block;
   float: left;
   position: relative;
   
@@ -237,7 +333,6 @@ input:checked + .slider-transparent:before {
   margin-top: 20px;
   margin-bottom: 0px;
   
-  font-family: sans-serif;
   font-size: 14px;
   color: white;
 }
@@ -245,6 +340,7 @@ input:checked + .slider-transparent:before {
 .chat-odd {
   background-color: #ddd;
   color: #555 !important;
+  transition: all 0.2s linear;
 }
 
 .chat-odd:hover {
