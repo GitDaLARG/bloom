@@ -167,8 +167,59 @@ rgba(0,0,0,0.1);
   color: #FFF;
 }
 
+
+/* Chip */
+
+.bloom-chip {
+  float: left;
+  width: auto;
+  height: 36px;
+  margin: 5px;
+  background-color: #efefef;
+  border-radius: 30px;
+}
+
+.bloom-chip .pic {
+  width: 36px;
+  height: 36px;
+  float: left;
+  display: inline-block;
+  border-radius: 100%;
+  pointer-events: none;
+}
+
+.bloom-chip p {
+  float: left;
+  font-size: 14px;
+  color: #555;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 11px;
+}
+
+.bloom-chip .close {
+  width: 24px;
+  height: 24px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 6px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: background 0.25s linear;
+}
+
+.bloom-chip .close:active {
+  color: #FFF;
+  background-color: #1b7ebc;
+}
+
+
 /* ---------------- */
-/* TOGGLE - DEFAULT */
+/* SWITCH - DEFAULT */
 /* ---------------- */
 
 .switch {
@@ -230,7 +281,7 @@ input:checked + .slider:before {
 
 
 /* --------------------- */
-/* TOGGLE RED - ALTERN 1 */
+/* SWITCH RED - ALTERN 1 */
 /* --------------------- */
 
 .switch {
@@ -290,7 +341,7 @@ input:checked + .slider-red:before {
 
 
 /* ---------------------------- */
-/* TOGGLE DEFAULT - TRANSPARENT */
+/* SWITCH DEFAULT - TRANSPARENT */
 /* ---------------------------- */
 
 .switch {
