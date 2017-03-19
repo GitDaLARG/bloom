@@ -197,6 +197,8 @@ rgba(0,0,0,0.1);
 }
 
 .bsnack-bar button[class="snack"] {
+  float: right;
+  margin: 5px;
   border: 1px solid #333;
   background-color: inherit;
   color: #FFF;
