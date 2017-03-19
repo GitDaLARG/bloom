@@ -1,0 +1,570 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Amiko|Merriweather|Montserrat');
+
+/* ---------------------------- */
+/* BASIC STYLES                 */
+/* ---------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+p, div, a, textarea, input, button {
+  font-family: 'Amiko', 'Montserrat', sans-serif;
+}
+
+
+/* ---------------------------- */
+/* INPUTS                       */
+/* ---------------------------- */
+
+input[type="text"], textarea {
+  width: 200px;
+  height: 20px;
+  padding: 10px;
+  border: 3px solid #CCC;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+input[type="text"]:hover, textarea:hover {
+  border: 3px solid #aaa;
+}
+
+input[type="text"]:focus, textarea:focus {
+  border: 3px solid #3498db;
+}
+
+input[type="text"]:out-of-range, textarea:out-of-range {
+  border: 3px solid #e74c3c;
+}
+
+textarea {
+  transition: none;
+}
+
+button {
+  border: 3px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: #fff;
+  font-weight: 600;
+  color: #ccc;
+  outline: none;
+  transition: all .15s linear;
+}
+
+button:hover {
+  border: 3px solid #aaa;
+  color: #999;
+}
+
+button:focus {
+  border: 3px solid #3498ff;
+  color: #3498ff;
+}
+
+button[class="colored"] {
+  border: 3px solid #1672af;
+  background-color: #3498ff;
+  color: #FFF;
+}
+
+button[class="colored"]:hover {
+  border: 3px solid #1672af;
+  background-color: #1672af;
+}
+
+button[class="colored"]:active {
+  border: 3px solid #3498ff;
+  background-color: #3498ff;
+}
+
+
+/* ---------------------------- */
+/* FUNCTIONAL STUFF             */
+/* ---------------------------- */
+
+/* Modal */
+
+@keyframes bloom-fade-black {
+    from {background-color: rgba(10, 10, 10, 0);}
+    to {background-color: rgba(10, 10, 10, 0.7);}
+}
+
+@keyframes bloom-modal-display {
+    from {opacity: 0; top: 0px;}
+    to {opacity: 1; top: 20%;}
+}
+
+.bloom-black-frame {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(10, 10, 10, 0.7);
+  animation-name: bloom-fade-black;
+  animation-duration: 0.65s;
+}
+
+.bloom-modal-frame {
+  position: relative;
+  float: none;
+  width: 60%;
+  top: 20%;
+  min-height: 50%;
+  max-height: 70%;
+  margin: auto;
+  padding: 5px;
+  overflow: auto;
+  border: 4px solid #CCC;
+  border-radius: 5px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 0 5px 5px
+rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+  animation-name: bloom-modal-display;
+  animation-iteration-count: 1;
+  animation-duration: 0.6s;
+}
+
+/* Dock */
+
+.bsnack-bar {
+  position: fixed;
+  border-radius: 3px;
+  border: 3px solid #333;
+  left: 15%;
+  bottom: -4px;
+  width: 70%;
+  height: 50px;
+  background-color: #111;
+}
+
+.bsnack-bar button[class="snack"] {
+  border: 3px solid #333;
+  background-color: inherit;
+  color: #FFF;
+}
+
+.bsnack-bar button[class="snack"]:hover {
+  border: 3px solid #333;
+  background-color: #333;
+}
+
+.bsnack-bar button[class="snack"]:active {
+  border: 3px solid #3498ff;
+  background-color: #3498ff;
+}
+
+.bsnack-bar p {
+  display: inline-block;
+  margin: 15px;
+  font-size: 14px;
+  color: #FFF;
+}
+
+
+/* Chip */
+
+.bloom-chip {
+  float: left;
+  width: auto;
+  height: 36px;
+  margin: 5px;
+  background-color: #efefef;
+  border-radius: 30px;
+}
+
+.bloom-chip .pic {
+  width: 36px;
+  height: 36px;
+  float: left;
+  display: inline-block;
+  border-radius: 100%;
+  pointer-events: none;
+}
+
+.bloom-chip p {
+  float: left;
+  font-size: 14px;
+  color: #555;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 11px;
+}
+
+.bloom-chip .close {
+  width: 24px;
+  height: 24px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 6px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: background 0.25s linear;
+}
+
+.bloom-chip .close:active {
+  color: #FFF;
+  background-color: #1b7ebc;
+}
+
+
+/* ---------------- */
+/* SWITCH - DEFAULT */
+/* ---------------- */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* DEFAULT COLOR - BLUE */
+
+input:checked + .slider {
+  background-color: #3498db;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #3498db;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* --------------------- */
+/* SWITCH RED - ALTERN 1 */
+/* --------------------- */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {display:none;}
+
+.slider-red {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-red:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider-red {
+  background-color: #e74c3c;
+}
+
+input:focus + .slider-red {
+  box-shadow: 0 0 1px #e74c3c;
+}
+
+input:checked + .slider-red:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider-red.round {
+  border-radius: 34px;
+}
+
+.slider-red.round:before {
+  border-radius: 50%;
+}
+
+
+/* ---------------------------- */
+/* SWITCH DEFAULT - TRANSPARENT */
+/* ---------------------------- */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {display:none;}
+
+.slider-transparent {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #fff;
+  background-color: transparent;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-transparent:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 5px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider-transparent {
+  background-color: #3498db;
+}
+
+input:focus + .slider-transparent {
+  box-shadow: 0 0 1px #3498db;
+}
+
+input:checked + .slider-transparent:before {
+  -webkit-transform: translateX(23px);
+  -ms-transform: translateX(23px);
+  transform: translateX(23px);
+}
+
+.slider-transparent.round {
+  border-radius: 34px;
+}
+
+.slider-transparent.round:before {
+  border-radius: 50%;
+}
+
+
+/* ---------------------------- */
+/* INTERACTION ELEMENTS         */
+/* ---------------------------- */
+
+.bloom-contact-card {
+  clear: both;
+  margin-bottom: 8px;
+  width: 220px;
+  height: 70px;
+  background-color: #FFF;
+  border-radius: 5px;
+  border: 3px solid #CCC;
+  padding: 5px;
+}
+
+.bloom-call-to {
+  float: left;
+  clear: none;
+  width: 70px;
+  height: 100%;
+  background-color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3498db;
+
+  border: 3px solid #FFF;
+  border-radius: 4px;
+  
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.bloom-call-to:hover {
+  color: #AAA;
+  border-color: #FFF;
+}
+
+.bloom-call-to:focus {
+  color: #FFF;
+  border-color: #3498db;
+  background-color: #3498db;
+}
+
+.bloom-call-number {
+  float: right;
+  margin-top: 26px;
+  margin-right: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #777;
+}
+
+/* ---------------------------- */
+/* ELEMENTS FOR WEB MESSENGERS  */
+/* ---------------------------- */
+
+#chat-bubble {
+  display: block;
+  float: left;
+  position: relative;
+  
+  min-width: 160px;
+  max-width: 60%;
+  width: auto;
+  height: auto;
+  padding: 15px;
+  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  
+  font-size: 14px;
+  cursor: default;
+  color: white;
+}
+
+.chat-odd {
+  float: left;
+  background-color: #ddd;
+  color: #555 !important;
+  transition: all 0.2s linear;
+}
+
+.chat-odd:hover {
+  color: #000 !important;
+}
+
+.chat-even {
+  float: right !important;
+  background-color: #4080FF;
+}
+
+.bubble-down {
+  position: absolute;
+  
+  width: 16px;
+  height: 16px;
+  left: 16px;
+  bottom: -8px;
+  
+  background-color: inherit;
+  
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  
+  display: block;
+}
+
+.bubble-up {
+  position: absolute;
+  
+  width: 16px;
+  height: 16px;
+  left: 16px;
+  top: -8px;
+  
+  background-color: inherit;
+  
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  
+  display: block;
+}
+
+.bubble-left {
+  position: absolute;
+  
+  width: 16px;
+  height: 16px;
+  left: -8px;
+  top: 25%;
+  
+  background-color: inherit;
+  
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  
+  display: block;
+}
+
+.bubble-right {
+  position: absolute;
+  
+  width: 16px;
+  height: 16px;
+  right: -8px;
+  top: 25%;
+  
+  background-color: inherit;
+  
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  display: block;
+}
+
+.bubble-round {
+  border-radius: 10px;
+}
