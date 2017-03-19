@@ -31,6 +31,15 @@ $(document).ready(function() {
             $(object).replaceWith(start + ' <img class="pic" src="' + $(object).attr('img') + '"> <p>' + $(object).text() + '</p> <button class="close"></button> </div>')
         }
 
+asdasjdlksaldkjaslk
+
+asdkasjlkdjaslkjdlaskjdlkasj
+
+
+sdakjdlaskjdlkasjdlkjaslkdja
+
+askldjaskldjaskljdklasj
+
 
     })
 
