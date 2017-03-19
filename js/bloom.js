@@ -52,10 +52,6 @@ $(document).ready(function() {
 
             if (position === "top") {
                 $(object).addClass('bar-position-top');
-            } else if (position === "bottom") {
-                $(object).addClass('bar-position-bottom');
-            } else if (position === "default") {
-                $(object).addClass('bar-position-bottom');
             } else {
                 $(object).addClass('bar-position-bottom');
             }
