@@ -204,7 +204,7 @@ rgba(0,0,0,0.1);
   animation-duration: 0.28s;
 }
 
-.bloom-modal-frame #modal-close {
+.bloom-modal-frame .close {
   width: 40px;
   height: 40px;
   position: fixed;
@@ -217,7 +217,7 @@ rgba(0,0,0,0.1);
   background-size: 32px;
 }
 
-.bloom-modal-frame #modal-close:focus {
+.bloom-modal-frame .close:focus {
   border-color: #e44061;
 }
 
