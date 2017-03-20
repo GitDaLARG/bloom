@@ -18,10 +18,27 @@ p, div, a, textarea, input, button {
   font-family: 'Amiko', 'Montserrat', sans-serif;
 }
 
+/* CODE TAG ------------------- */
 
-/* ---------------------------- */
-/* INPUTS                       */
-/* ---------------------------- */
+code {
+  display: block;
+  width: auto;
+  height: auto;
+  min-height: 24px;
+  margin: 5px;
+  padding: 5px 5px 5px 15px;
+  color: #333;
+  border-left: 3px solid #aaa;
+  transition: all 0.28s linear;
+}
+
+code:hover {
+  border-left: 3px solid #4080FF;
+  padding: 5px 5px 5px 20px;
+  color: #000;
+}
+
+/* FORM STUFF ----------------- */
 
 input[type="text"], textarea {
   width: 200px;
