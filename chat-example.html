@@ -17,20 +17,6 @@
 			padding: 0px; 
 		}
 
-		header {
-			width: 100%;
-			height: 40px;
-			position: fixed;
-			z-index: 999999;
-			background-color: #FFF;
-			border-bottom: 3px solid #CCC;
-		}
-
-		header p {
-			margin: 10px;
-			font-size: 16px;
-		}
-
 		label {
 			display: inline-block;
 			width: 30%;
@@ -47,116 +33,87 @@
 	</style>
 </head>
 
-
+<snack position="default"> <p>Chat Examples</p> </snack>
 
 <body style="background-color: #FFF;">
-
-	<header>
-		<p>Chat Example</p>
-	</header>
-
 	<label>
 	<h2>Text with round and pointer</h2>
 	<div class="chat">
-		<div id="chat-bubble" class="chat-odd bubble-round">
-		  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ad ab iure alias perspiciatis minus aperiam eveniet inventore impedit, optio expedita, sapiente distinctio harum iusto minima quaerat accusamus perferendis! Quos.
-		  
-		  <!-- CHAT BUBBLE OVERFLOW, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
-		  <!-- <div class="bubble-down"></div> -->
-		  <!-- <div class="bubble-up"></div> -->
-		  <div class="bubble-left"></div>
-		  <!-- <div class="bubble-right"></div> -->
-		</div>
+		<!-- MESSAGE FROM THE USER TO SOMEONE, OR ALSO CALLED: EVEN -->
+<div class="chat-bubble chat-even bubble-round">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ad ab iure alias perspiciatis minus aperiam eveniet inventore impedit, optio expedita, sapiente distinctio harum iusto minima quaerat accusamus perferendis! Quos.
 
-		<div id="chat-bubble" class="chat-even bubble-round">
-		  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ad ab iure alias perspiciatis minus aperiam eveniet inventore impedit, optio expedita, sapiente distinctio harum iusto minima quaerat accusamus perferendis! Quos.
-		  
-		  <!-- CHAT BUBBLE OVERFLOW, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
-		  <!-- <div class="bubble-down"></div>
-		  <div class="bubble-up"></div>
-		  <div class="bubble-left"></div> -->
-		  <div class="bubble-right"></div>
-		</div>
+  <!-- CHAT BUBBLE POINTER, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
+  <!-- <div class="bubble-down"></div>
+  <div class="bubble-up"></div>
+  <div class="bubble-left"></div> -->
+  <div class="bubble-right"></div>
+</div>
 
-		<div id="chat-bubble" class="chat-even bubble-round">
-		  Bloom is Awesome!
-		  
-		  <!-- CHAT BUBBLE OVERFLOW, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
-		  <!-- <div class="bubble-down"></div>
-		  <div class="bubble-up"></div>
-		  <div class="bubble-left"></div> -->
-		  <div class="bubble-right"></div>
-		</div>
+<!-- MESSAGE FROM SOMEONE TO THE USER, OR ALSO CALLED: ODD -->
+<div class="chat-bubble chat-odd bubble-round">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ad ab iure alias perspiciatis minus aperiam eveniet inventore impedit, optio expedita, sapiente distinctio harum iusto minima quaerat accusamus perferendis! Quos.
+
+  <!-- CHAT BUBBLE POINTER, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
+  <!-- <div class="bubble-down"></div>
+  <div class="bubble-up"></div> -->
+  <div class="bubble-left"></div>
+  <!-- <div class="bubble-right"></div> -->
+</div>
 	</div>
 	</label>
 
 	<label>
 	<h2>Text with no-round, and pointer</h2>
 	<div class="chat">
-		<div id="chat-bubble" class="chat-odd">
-		  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ad ab iure alias perspiciatis minus aperiam eveniet inventore impedit, optio expedita, sapiente distinctio harum iusto minima quaerat accusamus perferendis! Quos.
-		  
-		  <!-- CHAT BUBBLE OVERFLOW, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
-		  <!-- <div class="bubble-down"></div> -->
-		  <!-- <div class="bubble-up"></div> -->
-		  <div class="bubble-left"></div>
-		  <!-- <div class="bubble-right"></div> -->
-		</div>
+		<!-- MESSAGE FROM THE USER TO SOMEONE, OR ALSO CALLED: EVEN -->
+<div class="chat-bubble chat-even">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ad ab iure alias perspiciatis minus aperiam eveniet inventore impedit, optio expedita, sapiente distinctio harum iusto minima quaerat accusamus perferendis! Quos.
 
-		<div id="chat-bubble" class="chat-even">
-		  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ad ab iure alias perspiciatis minus aperiam eveniet inventore impedit, optio expedita, sapiente distinctio harum iusto minima quaerat accusamus perferendis! Quos.
-		  
-		  <!-- CHAT BUBBLE OVERFLOW, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
-		  <!-- <div class="bubble-down"></div>
-		  <div class="bubble-up"></div>
-		  <div class="bubble-left"></div> -->
-		  <div class="bubble-right"></div>
-		</div>
+  <!-- CHAT BUBBLE POINTER, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
+  <!-- <div class="bubble-down"></div>
+  <div class="bubble-up"></div>
+  <div class="bubble-left"></div> -->
+  <div class="bubble-right"></div>
+</div>
 
-		<div id="chat-bubble" class="chat-even">
-		  Bloom is Awesome!
-		  
-		  <!-- CHAT BUBBLE OVERFLOW, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
-		  <!-- <div class="bubble-down"></div>
-		  <div class="bubble-up"></div>
-		  <div class="bubble-left"></div> -->
-		  <div class="bubble-right"></div>
-		</div>
+<!-- MESSAGE FROM SOMEONE TO THE USER, OR ALSO CALLED: ODD -->
+<div class="chat-bubble chat-odd">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ad ab iure alias perspiciatis minus aperiam eveniet inventore impedit, optio expedita, sapiente distinctio harum iusto minima quaerat accusamus perferendis! Quos.
+
+  <!-- CHAT BUBBLE POINTER, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
+  <!-- <div class="bubble-down"></div>
+  <div class="bubble-up"></div> -->
+  <div class="bubble-left"></div>
+  <!-- <div class="bubble-right"></div> -->
+</div>
 	</div>
 	</label>
 
 	<label>
 	<h2>Text with round but no pointer</h2>
 	<div class="chat">
-		<div id="chat-bubble" class="chat-odd bubble-round">
-		  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ad ab iure alias perspiciatis minus aperiam eveniet inventore impedit, optio expedita, sapiente distinctio harum iusto minima quaerat accusamus perferendis! Quos.
-		  
-		  <!-- CHAT BUBBLE OVERFLOW, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
-		  <!-- <div class="bubble-down"></div> -->
-		  <!-- <div class="bubble-up"></div> -->
-		  <!-- <div class="bubble-left"></div> -->
-		  <!-- <div class="bubble-right"></div> -->
-		</div>
+		<!-- MESSAGE FROM THE USER TO SOMEONE, OR ALSO CALLED: EVEN -->
+<div class="chat-bubble chat-even bubble-round">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ad ab iure alias perspiciatis minus aperiam eveniet inventore impedit, optio expedita, sapiente distinctio harum iusto minima quaerat accusamus perferendis! Quos.
 
-		<div id="chat-bubble" class="chat-even bubble-round">
-		  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ad ab iure alias perspiciatis minus aperiam eveniet inventore impedit, optio expedita, sapiente distinctio harum iusto minima quaerat accusamus perferendis! Quos.
-		  
-		  <!-- CHAT BUBBLE OVERFLOW, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
-		  <!-- <div class="bubble-down"></div>
-		  <div class="bubble-up"></div>
-		  <div class="bubble-left"></div> -->
-		  <!-- <div class="bubble-right"></div> -->
-		</div>
+  <!-- CHAT BUBBLE POINTER, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
+  <!-- <div class="bubble-down"></div>
+  <div class="bubble-up"></div>
+  <div class="bubble-left"></div>
+  <div class="bubble-right"></div> -->
+</div>
 
-		<div id="chat-bubble" class="chat-even bubble-round">
-		  Bloom is Awesome!
-		  
-		  <!-- CHAT BUBBLE OVERFLOW, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
-		  <!-- <div class="bubble-down"></div>
-		  <div class="bubble-up"></div>
-		  <div class="bubble-left"></div> -->
-		  <!-- <div class="bubble-right"></div> -->
-		</div>
+<!-- MESSAGE FROM SOMEONE TO THE USER, OR ALSO CALLED: ODD -->
+<div class="chat-bubble chat-odd bubble-round">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ad ab iure alias perspiciatis minus aperiam eveniet inventore impedit, optio expedita, sapiente distinctio harum iusto minima quaerat accusamus perferendis! Quos.
+
+  <!-- CHAT BUBBLE POINTER, IS HIDDEN UNLESS DEFINED BY A CLASS ON THE PARENT ELEMENT -->
+  <!-- <div class="bubble-down"></div>
+  <div class="bubble-up"></div>
+  <div class="bubble-left"></div>
+  <div class="bubble-right"></div> -->
+</div>
 	</div>
 	</label>
 </body>
