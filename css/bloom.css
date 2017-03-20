@@ -499,6 +499,8 @@ input:checked + .slider-transparent:before {
 /* INTERACTION ELEMENTS         */
 /* ---------------------------- */
 
+/* CALL CARD ------------------ */
+
 .bloom-contact-card {
   clear: both;
   margin-bottom: 8px;
@@ -517,10 +519,9 @@ input:checked + .slider-transparent:before {
   height: 100%;
   background-color: #FFF;
   font-size: 16px;
-  font-weight: 600;
-  color: #3498db;
+  color: #CCC;
 
-  border: 1px solid #FFF;
+  border: 1px solid #CCC;
   border-radius: 3px;
   
   cursor: pointer;
@@ -530,13 +531,13 @@ input:checked + .slider-transparent:before {
 
 .bloom-call-to:hover {
   color: #AAA;
-  border-color: #FFF;
+  border-color: #AAA;
 }
 
 .bloom-call-to:focus {
   color: #FFF;
-  border-color: #3498db;
-  background-color: #3498db;
+  border-color: #4080FF;
+  background-color: #4080FF;
 }
 
 .bloom-call-number {
@@ -548,11 +549,13 @@ input:checked + .slider-transparent:before {
   color: #777;
 }
 
+/* SOCIAL HUB ----------------- */
+
 /* ---------------------------- */
 /* ELEMENTS FOR WEB MESSENGERS  */
 /* ---------------------------- */
 
-#chat-bubble {
+.chat-bubble {
   display: block;
   float: left;
   position: relative;
