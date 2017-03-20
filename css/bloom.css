@@ -22,6 +22,16 @@ p, div, a, textarea, input, button {
   font-family: 'Montserrat', 'Amiko', sans-serif;
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #4080FF;
+  margin: 1.3em 0;
+  padding: 0;
+  clear: both; 
+}
+
 /* CODE TAG ------------------- */
 
 code {
@@ -255,10 +265,12 @@ rgba(0,0,0,0.1);
   margin: 5px;
   background-color: #efefef;
   border-radius: 30px;
+  cursor: default;
+  transition: all 0.28s linear;
 }
 
 .bloom-chip:hover {
-  background-color: #aaa;
+  background-color: #ccc;
 }
 
 .bloom-chip .pic {
@@ -273,11 +285,11 @@ rgba(0,0,0,0.1);
 .bloom-chip p {
   float: left;
   font-size: 14px;
-  color: #555;
+  color: #444;
   display: inline-block;
   margin-left: 15px;
   margin-right: 15px;
-  margin-top: 11px;
+  margin-top: 9px;
 }
 
 .bloom-chip .close {
