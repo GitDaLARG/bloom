@@ -72,15 +72,14 @@ button {
   border-radius: 3px;
   padding: 8px;
   background-color: #fff;
-  font-weight: 600;
-  color: #ccc;
+  color: #aaa;
   outline: none;
   transition: all .28s linear;
 }
 
 button:hover {
   border: 1px solid #aaa;
-  color: #999;
+  color: #777;
 }
 
 button:focus {
