@@ -204,23 +204,6 @@ rgba(0,0,0,0.1);
   animation-duration: 0.28s;
 }
 
-.bloom-modal-frame .close {
-  width: 40px;
-  height: 40px;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  z-index: 9999;
-  cursor: pointer;
-  background-image: url(../assets/vectors/close.svg);
-  background-position: center;
-  background-size: 32px;
-}
-
-.bloom-modal-frame .close:focus {
-  border-color: #e44061;
-}
-
 /* SnackBar */
 
 .bsnack-bar {
