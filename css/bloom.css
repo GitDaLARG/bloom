@@ -32,6 +32,19 @@ hr {
   clear: both; 
 }
 
+/* KBD TAG -------------------- */
+
+kbd {
+    padding: 5px;
+    border: 1px solid #CCC;
+    background: #FFF;
+}
+
+kbd:hover {
+    border: 1px solid #4080FF;
+    background: #4080FF;
+}
+
 /* CODE TAG ------------------- */
 
 code {
