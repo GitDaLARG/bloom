@@ -186,7 +186,7 @@ button[class="colored"]:active {
   background-color: #FFF;
   -webkit-box-shadow: 0 0 5px 5px
 rgba(0,0,0,0.1);
-  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.03);
   animation-name: bloom-modal-display;
   animation-iteration-count: 1;
   animation-duration: 0.20s;
