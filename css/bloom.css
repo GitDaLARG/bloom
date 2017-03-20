@@ -40,6 +40,7 @@ kbd {
     border-radius: 3px;
     background: #FFF;
     color: #333;
+    transition: all 0.28s linear;
 }
 
 kbd:hover {
