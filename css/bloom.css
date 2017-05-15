@@ -129,6 +129,47 @@ button[class="colored"]:active {
   background-color: #4080AA;
 }
 
+/* Force directional - Left */
+
+button[class="left colored"] {
+  float: left;
+  border: 1px solid #1672af;
+  background-color: #4080FF;
+  color: #FFF;
+}
+
+button[class="left colored"]:hover {
+  float: left;
+  border: 1px solid #4080FF;
+  background-color: #4080FF;
+}
+
+button[class="left colored"]:active {
+  float: left;
+  border: 1px solid #4080AA;
+  background-color: #4080AA;
+}
+
+/* Force directional - Right */
+
+button[class="right colored"] {
+  float: right;
+  border: 1px solid #1672af;
+  background-color: #4080FF;
+  color: #FFF;
+}
+
+button[class="right colored"]:hover {
+  float: right;
+  border: 1px solid #4080FF;
+  background-color: #4080FF;
+}
+
+button[class="right colored"]:active {
+  float: right;
+  border: 1px solid #4080AA;
+  background-color: #4080AA;
+}
 
 /* ---------------------------- */
 /* FUNCTIONAL STUFF             */
@@ -711,4 +752,16 @@ input:checked + .slider-transparent:before {
 
 .bubble-round {
   border-radius: 10px;
+}
+
+/* ---------------------------- */
+/* GENERAL ENFORCING            */
+/* ---------------------------- */
+
+.left {
+  float: none !important;
+}
+
+.right {
+  float: right !important;
 }
