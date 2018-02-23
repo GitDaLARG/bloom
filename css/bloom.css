@@ -94,11 +94,11 @@ input[type="text"]:out-of-range, textarea:out-of-range {
 }
 
 button {
-  border: 1px solid #ccc;
+  border: 1px solid #AAA;
   border-radius: 3px;
   padding: 8px;
   background-color: #fff;
-  color: #ccc;
+  color: #AAA;
   outline: none;
   transition: all .28s linear;
 }
