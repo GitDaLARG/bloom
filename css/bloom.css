@@ -663,7 +663,7 @@ input:checked + .slider-transparent:before {
   font-size: 14px;
   cursor: default;
   color: white;
-  border-radius: 3px;
+  border-radius: 0px;
 }
 
 .chat-odd {
